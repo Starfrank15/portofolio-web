@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio – Franklyn (Mahasiswa Semester 5)</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0b1020; color: #e9ecf1; margin: 0; line-height: 1.6;
+    }
+    .container { max-width: 1100px; margin: auto; padding: 20px; }
+    h1, h2 { text-align: center; margin-bottom: 10px; }
+    p.subtitle { text-align: center; color: #cfd3db; margin-bottom: 40px; }
+    .intro {
+      background: rgba(255,255,255,0.06);
+      padding: 20px; border-radius: 15px; text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2); margin-bottom: 40px;
+    }
+    .skills {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px; margin-top: 30px;
+    }
+    .card {
+      background: rgba(255,255,255,0.06); padding: 20px; border-radius: 15px;
+      text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .progress {
+      background: rgba(255,255,255,0.1);
+      border-radius: 20px; overflow: hidden;
+      height: 16px; margin: 12px 0;
+    }
+    .progress-bar {
+      height: 16px; background: linear-gradient(135deg, #6a9cff, #5cf0d9);
+    }
+    .projects {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px; margin-top: 30px;
+    }
+    .projects img {
+      width: 100%; border-radius: 12px; margin-bottom: 15px;
+    }
+    .contact-section { margin-top: 50px; }
+    .contact-info {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px; margin-top: 20px;
+    }
+    .info-block {
+      background: rgba(255,255,255,0.06); padding: 20px; border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .info-block h3 { margin: 0 0 12px; color: #6a9cff; font-size: 1.2rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Portofolio Franklyn</h1>
+    <p class="subtitle">Mahasiswa Semester 5 | Fokus pada Pengembangan Frontend</p>
+
+    <!-- Perkenalan Data Diri -->
+    <div class="intro">
+      <h2>Tentang Saya</h2>
+      <p><strong>Nama:</strong> Franklyn</p>
+      <p><strong>Semester:</strong> 5</p>
+      <p><strong>Umur:</strong> 19 tahun</p>
+      <p><strong>Kampus:</strong>Universitas Mikroskil</p>
+      <p>Saya adalah seorang mahasiswa dengan minat besar pada pengembangan antarmuka pengguna
+         dan aplikasi mobile. Fokus saya adalah membangun aplikasi yang interaktif, modern, 
+         dan memiliki pengalaman pengguna yang baik. Saya juga cukup handal menggunakan database sql.</p>
+    </div>
+
+    <!-- Keahlian -->
+    <h2>Keahlian</h2>
+    <div class="skills">
+      <div class="card">
+        <h3>Vue.js</h3>
+        <div class="progress"><div class="progress-bar" style="width:80%"></div></div>
+        <p>Tingkat Penguasaan: 80%</p>
+      </div>
+      <div class="card">
+        <h3>Mobile Frontend (Flutter)</h3>
+        <div class="progress"><div class="progress-bar" style="width:90%"></div></div>
+        <p>Tingkat Penguasaan: 90%</p>
+      </div>
+      <div class="card">
+        <h3>sql CRUD (Js and Xampp)</h3>
+        <div class="progress"><div class="progress-bar" style="width:90%"></div></div>
+        <p>Tingkat Penguasaan: 50%</p>
+      </div>
+    </div>
+
+    <!-- Contoh Proyek -->
+    <h2>Contoh Proyek</h2>
+    <div class="projects">
+      <div class="card">
+        <img src="vue.png" alt="Contoh Proyek Vue">
+        <h3>Proyek Vue.js</h3>
+        <p>Aplikasi web interaktif dengan Vue.js.</p>
+      </div>
+      <div class="card">
+        <img src="fluter1.png" alt="Contoh Proyek Flutter 1">
+        <h3>Proyek Flutter 1</h3>
+        <p>Aplikasi mobile dengan antarmuka modern.</p>
+      </div>
+      <div class="card">
+        <img src="fluter2.png" alt="Contoh Proyek Flutter 2">
+        <h3>Proyek Flutter 2</h3>
+        <p>Aplikasi mobile dengan fitur tambahan.</p>
+      </div>
+    </div>
+
+    <!-- Kontak -->
+    <div class="contact-section">
+      <h2>Kontak & Dukungan Portofolio</h2>
+      <div class="contact-info">
+        <div class="info-block">
+          <h3>💼 Kesempatan Kolaborasi</h3>
+          <p>Apabila terdapat peluang magang, penelitian, atau proyek, saya terbuka untuk berdiskusi lebih lanjut melalui email.</p>
+        </div>
+        <div class="info-block">
+          <h3>☕ Dukung Karya</h3>
+          <p>Anda dapat mendukung karya saya dengan memberikan masukan, berbagi portofolio ini kepada rekan, atau berdiskusi terkait pengembangan teknologi.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
